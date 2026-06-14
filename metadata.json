@@ -1,0 +1,6 @@
+{
+  "name": "LayerLift AI",
+  "description": "Convert flat PNG/JPG designs into layered fully-editable PSD files with automatic AI separating text, logos, graphics, and backgrounds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

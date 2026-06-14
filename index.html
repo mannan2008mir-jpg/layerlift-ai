@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LayerLift AI - Convert flat images to editable layer PSDs</title>
+    <script>
+      // Safeguard window.fetch to be writable & configurable.
+      // Helps modern sandboxed browsers accept transitive monkeypatch libraries
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          if (originalFetch) {
+            Object.defineProperty(window, 'fetch', {
+              value: originalFetch,
+              writable: true,
+              configurable: true
+            });
+          }
+        } catch (e) {
+          console.warn("LayerLift: Could not reconfigure window.fetch", e);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
